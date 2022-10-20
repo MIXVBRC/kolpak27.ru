@@ -11,7 +11,6 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
-$arResult["DETAIL_PICTURE"]["SRC"] = $arResult["DETAIL_PICTURE"]["SRC"]?$arResult["DETAIL_PICTURE"]["SRC"]:'/no_photo.png';
 ?>
 
 <div class="detail">
@@ -51,6 +50,11 @@ $arResult["DETAIL_PICTURE"]["SRC"] = $arResult["DETAIL_PICTURE"]["SRC"]?$arResul
             </div>
             <div class="detail__text">
                 <?=$arResult["DETAIL_TEXT"]?>
+
+                <?foreach ($arResult['PROPERTIES']['DETAIL_TEXT_IMAGES']['VALUE'] as $key => $src):?>
+                    <img src="<?=$src?>" alt="image_<?=$key?>">
+                <?endforeach?>
+
             </div>
         </div>
         <?endif;?>

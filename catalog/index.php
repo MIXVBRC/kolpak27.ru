@@ -31,7 +31,7 @@ $APPLICATION->SetTitle("Каталог");
 		"DETAIL_PAGER_TITLE" => "Страница",
 		"DETAIL_PROPERTY_CODE" => array(
 			0 => "SPECIFICATIONS",
-			1 => "",
+			1 => "DETAIL_TEXT_IMAGES",
 		),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
