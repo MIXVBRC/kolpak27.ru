@@ -1,0 +1,8 @@
+.idea/*
+/iblocks
+/bitrix
+/upload
+/test/
+test.php
+yandex_*.html
+google*.html
