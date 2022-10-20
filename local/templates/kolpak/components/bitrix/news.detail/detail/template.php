@@ -52,7 +52,7 @@ $this->setFrameMode(true);
                 <?=$arResult["DETAIL_TEXT"]?>
 
                 <?foreach ($arResult['PROPERTIES']['DETAIL_TEXT_IMAGES']['VALUE'] as $key => $src):?>
-                    <img src="<?=$src?>" alt="image_<?=$key?>">
+                    <img src="<?=$src?>" alt="image_<?=$key?>" style="max-width: 100%;">
                 <?endforeach?>
 
             </div>
